@@ -182,6 +182,62 @@ nav a {
 
 /* features style */
 
+.feature-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1140px;
+  margin: 210px auto;
+  padding: 20px;
+}
+
+.feature-image {
+  position: relative;
+  flex: 1;
+ 
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  /* display: block; */
+  border-radius: 8px;
+}
+
+.feature-image .badge {
+  position: absolute;
+  top: -140px;
+  right: -90px;
+  width: 286px;
+  height: 286px;
+  
+}
+
+
+.feature-content {
+  flex: 1;
+  max-width: 540px;
+  padding:38px 60px ;
+  
+}
+
+.feature-content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.feature-content ul {
+  padding-left: 20px;
+}
+
+.feature-content li {
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: left;
+  color:rgba(0, 0, 0, 0.5) ;
+}
+
 
 /* Responsive */
 
@@ -192,8 +248,13 @@ nav a {
       justify-content: space-between;
       align-items: center;
       padding: 10px 20px;
+  }
+  .feature-section{
+    flex-direction: column;
+    
   } 
-  nav ul{
+  nav ul,
+  .feature-image .badge{
     display: none;
   }
   .hero{
@@ -207,8 +268,15 @@ nav a {
   .product-grid{
     grid-template-columns: repeat(2, 1fr);
   }
-  
-
+   .feature-content{
+    padding: 0px;
+   }
+   .feature-section{
+    padding: 0px;
+    max-width: 361px;
+    max-height: 600px;
+    margin:20px auto ;
+   }
 }
 
 
