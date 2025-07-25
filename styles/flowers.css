@@ -337,6 +337,79 @@ nav a {
   font-weight: bold;
 }
 
+/* email styles */
+
+.subscribe-section {
+  background-image: url('../assets/news-letter-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  min-height: 50vh;
+  max-width: 100%;
+}
+
+
+.subscribe-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.subscribe-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 100px;
+  
+  
+}
+
+.subscribe-content h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color:#FFFFFF ;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+  max-width: 100%;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 12px 20px;
+  border: none;
+  flex: 1;
+  font-size: 16px;
+  min-width: 0;
+}
+
+.subscribe-form button {
+  padding: 12px 20px;
+  background-color:#E95A08;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+
 /* Responsive */
 
 /* small device */
@@ -349,8 +422,9 @@ nav a {
   }
   .feature-section,
   .deals-section,
-  .deal-layout{
-    flex-direction: column;
+  .deal-layout
+              {
+   flex-direction: column;
     
   } 
   nav ul,
@@ -392,6 +466,18 @@ nav a {
    .deals-left{
     max-width: 300px;
    }
-}
+   .subscribe-section{
+    min-height: 30vh;
+    min-width: 20vh;
+    margin: 0px auto;
+    
+   }
+   .subscribe-section h2{
+    font-size: 1.25rem;
+    font-weight: bold;
+   }
+   
+   
+  }
 
 
