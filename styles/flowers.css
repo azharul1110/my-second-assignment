@@ -409,6 +409,84 @@ nav a {
   white-space: nowrap;
 }
 
+/* footer styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color:white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-left {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  color:rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.footer-links {
+  display: flex;
+  flex: 2 1 400px;
+  justify-content: flex-start; 
+  gap: 40px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #6B7280;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+}
+
 
 /* Responsive */
 
@@ -436,8 +514,6 @@ nav a {
     padding:30px;
     }
     
-    
-
   .hero-text{
     max-width: 100%;
   }  
@@ -476,8 +552,65 @@ nav a {
     font-size: 1.25rem;
     font-weight: bold;
    }
+   .footer-links{
+    padding: 0px 10px;
+    }
    
-   
+    /* footer */
+
+  
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start; /* Align to left */
+    gap: 20px;
   }
+
+  .footer-left, .footer-links, .footer-social {
+    flex: 1 1 auto;
+    text-align: left; /* Align text to left */
+  }
+
+  .footer-links {
+    justify-content: flex-start; /* Align links to left */
+    gap: 20px;
+  }
+
+  .footer-social {
+    justify-content: flex-start; /* Align social icons to left */
+    gap: 10px;
+  }
+
+  .footer-container {
+    padding: 20px;
+  }
+
+  .footer-left p {
+    font-size: 12px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-social {
+    gap: 8px;
+  }
+
+  
+}
+
+
+
+  
+
+
+
+  
+  
+
+
+
+  
 
 
